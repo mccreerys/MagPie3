@@ -45,6 +45,14 @@ public class Magpie3
 		{
 			response = "Tell me more about your family.";
 		}
+        else if (findKeyword(statement, "Mr.") >= 0)
+        {
+            response = "He sounds like a good teacher";
+        }
+        else if (findKeyword(statement, "Mrs.") >= 0)
+        {
+            response = "She sounds like a good teacher.";
+        }
 		else
 		{
 			response = getRandomResponse();
